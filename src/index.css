@@ -1,0 +1,27 @@
+/* Import des fonts */
+@font-face {
+    font-family: 'COPRGTB';
+    src: url('./assets/fonts/COPRGTB.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'COPRGTL';
+    src: url('./assets/fonts/COPRGTL.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'MetalMania';
+    src: url('./assets/fonts/MetalMania-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TradeWinds';
+    src: url('./assets/fonts/TradeWinds-Regular.ttf') format('truetype');
+}
+
+
+
+/* Import des utilitaires Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
