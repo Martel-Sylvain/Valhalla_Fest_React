@@ -19,6 +19,26 @@
     src: url('./assets/fonts/TradeWinds-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'VollkornTitle';
+    src: url('./assets/fonts/VollkornSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'VollkornText';
+    src: url('./assets/fonts/Vollkorn-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Uncial';
+    src: url('./assets/fonts/UncialAntiqua-Regular.ttf') format('truetype');
+}
+
 
 
 /* Import des utilitaires Tailwind */

@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
+
+// Création de la fonction Countdown
+// Utilisation de useState pour déclarer une variable timeLeft initialisée à un objet avec des valeurs toutes à 0.
+// setTimeLeft est la fonction permettant de mettre timeLeft à jour
+// const [state, setState] = useState(initialState)
 const Countdown = () => {
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
@@ -8,21 +13,29 @@ const Countdown = () => {
         seconds: 0
     });
 
+
+    // on calcule ici le temps restant avant l'évènement (25/02/2025)
+    // on définie les constantes de temps en ms
     const calculateTimeLeft = () => {
         const second = 1000,
             minute = second * 60,
             hour = minute * 60,
             day = hour * 24;
 
-        const eventDate = new Date('2025-02-25').getTime();
-        const now = new Date().getTime();
-        const distance = eventDate - now;
+        const eventDate = new Date('2025-02-25').getTime();// evenDate est l'heure de l'évènement en ms depuis le 1/01/1970
+        const now = new Date().getTime();// now est l'heure actuelle en ms
+        const distance = eventDate - now;// on fait la différence et on obtient le temps en ms restant avant l'évnènement
 
+
+        // si distance < 0 : la date est passée, on retourne null
+        // sinon on retourne un objet contenant le nombre de jours/heures/minutes/secondes
         if (distance < 0) {
             return null;
         } else {
             return {
+                // pour trouver le nombre de jours on divise le temps restant (distance) par le nombre de ms dans un jour, Math.floor fait un arrondi à l'entier inférieur
                 days: Math.floor(distance / day),
+                // idem pour la suite, mais on utilise Modulo (%) pour obtenir ce qui reste de la division et ne constitue pas des jours entiers, idem on divise par le nombre de ms dans une heure
                 hours: Math.floor((distance % day) / hour),
                 minutes: Math.floor((distance % hour) / minute),
                 seconds: Math.floor((distance % minute) / second)
@@ -30,6 +43,17 @@ const Countdown = () => {
         }
     };
 
+
+    // Utilisation de useEffect qui permet d'effectuer
+    // useEffect(() => { //effet return() => //nettoyage}; }, [dependencies]);
+    // La fonction passée à useEffect est exécutée après chaque rendu du composant.
+    // Le tableau dependencies est une liste des variables d'état ou des props que l'effet dépend. L'effet sera exécuté de nouveau si une des dépendances change.
+
+
+    // on définie timer qui va utiliser setInterval qui appelle calculateTimeLeft toutes les 1000ms (=1seconde) et va mettre à jour timeLeft avec setTimeLeft
+    // à chaque fois on "nettoie" avec clearInterval pour gérer le démontage du composant que l'on vient de monter (puisque ça va changer à chauqe secondes, on en a plus besoin ensuite)
+    // le [] vide assure que l'effet ne s'execute qu'une seule fois
+    // setInterval = fonction JS avec un délai ici de 1000ms
     useEffect(() => {
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());
@@ -38,30 +62,36 @@ const Countdown = () => {
         return () => clearInterval(timer);
     }, []);
 
+
+
+    // ce que l'on obtient
+    // si timeLeft est null, l'évènement est passé, on affiche Let's Go!!
     if (!timeLeft) {
         return (
-            <div className="my-5 sm:my-7 md:my-10 lg:my-16 xl:my-20 2xl:my-24 mx-auto font-coprgtb text-center text-xl text-whiteV sm:text-2xl lg:text-3xl xl:text-4xl">
+            <div className="w-[75vw] font-fontTitle text-center text-[4vw] text-whiteV">
                 <h2 id="countdownTitle">Let's Go!!</h2>
             </div>
         );
     }
 
+    // sinon on va retourner le countdown
+    // on va chercher chaque valeur avec {timeLeft.xxx}
     return (
-        <div className="my-5 sm:my-7 md:my-10 lg:my-16 xl:my-20 2xl:my-24 mx-auto font-coprgtb text-center text-xl text-whiteV sm:text-2xl lg:text-3xl xl:text-4xl">
-            <h2 id="countdownTitle">Opens in :</h2>
-            <div id="countdown">
-                <ul className="flex justify-between gap-3 sm:gap-5 md:gap-9 lg:gap-24 xl:gap-32 2xl:gap-40">
-                    <li className="flex flex-col items-center text-sm lg:text-base xl:text-xl">
-                        <span className="block text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl" id="days">{timeLeft.days}</span>Days
+        <div className="w-[75vw] font-fontTitle text-center text-[4vw] text-whiteV mt-[3vh] lg:mt-[7vh]">
+            <h2 className='font-fontTitle'>Opens in :</h2>
+            <div className='mt-[2vh] lg:mt-[5vh]'>
+                <ul className="flex justify-around text-[2vw]">
+                    <li className="flex flex-col items-center">
+                        <span className="block text-[4vw]">{timeLeft.days}</span>Days
                     </li>
-                    <li className="flex flex-col items-center text-sm lg:text-base xl:text-xl">
-                        <span className="block text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl" id="hours">{timeLeft.hours}</span>Hours
+                    <li className="flex flex-col items-center">
+                        <span className="block text-[4vw]">{timeLeft.hours}</span>Hours
                     </li>
-                    <li className="flex flex-col items-center text-sm lg:text-base xl:text-xl">
-                        <span className="block text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl" id="minutes">{timeLeft.minutes}</span>Minutes
+                    <li className="flex flex-col items-center">
+                        <span className="block text-[4vw]">{timeLeft.minutes}</span>Minutes
                     </li>
-                    <li className="flex flex-col items-center text-sm lg:text-base xl:text-xl">
-                        <span className="block text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl" id="seconds">{timeLeft.seconds}</span>Seconds
+                    <li className="flex flex-col items-center">
+                        <span className="block text-[4vw]">{timeLeft.seconds}</span>Seconds
                     </li>
                 </ul>
             </div>

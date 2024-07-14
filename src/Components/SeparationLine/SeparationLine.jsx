@@ -3,7 +3,7 @@ import line from '../../assets/img/Icones/Separation_Line.svg'
 
 const SeparationLine = () => {
     return (
-        <img className='w-2/5 my-vh-5' src={line} alt="Separation Glyph Line" />
+        <img className='w-2/5 mt-[3vh] lg:mt-[7vh]' src={line} alt="Separation Glyph Line" />
     );
 }
 
