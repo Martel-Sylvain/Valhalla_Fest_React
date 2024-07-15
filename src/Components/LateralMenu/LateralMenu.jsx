@@ -25,11 +25,11 @@ const LateralMenu = () => {
     // group-hover:opacity-0 : signifie que lorsque le parent est survolé, l'image devient transparente
     // group-hover:opacity-100 : signifie que lorsque le parent est survolé, l'image devient visible
     // href={icon.url} target="_blank" pour créer une nouvelle page en cas de click sur le lien
-    // rel="noopener noreferrer" : bonne pratqie pour des raisons de sécurité lorsque l'on utilise target="_blank" => on empêche en fait la nouvelle page d'avoir accès à window.opener et donc de savoir d'où m'on vient lorque l'on arrive sur celle-ci
+    // rel="noopener noreferrer" : bonne pratique pour des raisons de sécurité lorsque l'on utilise target="_blank" => on empêche en fait la nouvelle page d'avoir accès à window.opener et donc de savoir d'où m'on vient lorque l'on arrive sur celle-ci
     return (
-        <div className="fixed flex flex-col gap-[2vh] right-1 bottom-1 bg-transparent z-20 mx-[1vh] my-[4vh]">
+        <div className="fixed flex flex-col md:gap-2 lg:gap-6 right-1 bottom-1 bg-transparent z-20 mx-[1vh] my-[1vh] lg:my-[4vh]">
             {icons.map((icon, index) => (
-                <a key={index} href={icon.url} target="_blank" className="relative group w-[2vw] h-[2vh] py-[2vh]">
+                <a key={index} href={icon.url} target="_blank" rel="noopener noreferrer" className="relative group w-[2vw] h-[2vh] lg:py-[1vh]">
                     <img className="absolute inset-0 transform group-hover:opacity-0 hover:rotate-[-6deg] hover:scale-150 transition duration-300"
                         src={icon.default} alt={icon.alt} />
                     <img className="absolute inset-0 transform opacity-0 group-hover:opacity-100 hover:rotate-[-6deg] hover:scale-150 transition duration-300"

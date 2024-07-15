@@ -13,12 +13,15 @@ export default {
         whiteVt: 'rgba(216, 216, 216, 0.75)',
         goldV: '#75683B',
         goldVT: 'rgba(117, 104, 59, 0.25)',
-        goldVt: 'rgba(117, 104, 59, 0.75)',
+        goldVt: 'rgba(117, 104, 59, 0.90)',
         yellowV: '#F5BA00',
         redV: '#C60202',
         glitchR: '#fe3e3e',
         glitchG: '#3df0cf',
         glitchW: '#f1f1f1',
+      },
+      dropShadow: {
+        'custom': '2px 2px 4px rgba(0, 0, 0, 0.5)',
       },
       spacing: {
         'vh-1': '1vh',

@@ -225,3 +225,493 @@ export const bandsPhotos = {
     Wintersun_Photo,
     Wolfheart_Photo,
 };
+
+
+export const bandsData = [
+    {
+        name: "Abbath",
+        day: "Day 1",
+        stage: "Loki Stage",
+        hour: "22h00",
+        logo: Abbath_Logo,
+        photo: Abbath_Photo,
+        followed: false
+    },
+    {
+        name: "Adorned Brood",
+        day: "Day 2",
+        stage: "Loki Stage",
+        hour: "16h00",
+        logo: Adorned_Brood_Logo,
+        photo: Adorned_Brood_Photo,
+        followed: false
+    },
+    {
+        name: "Aephanemer",
+        day: "Day 2",
+        stage: "Loki Stage",
+        hour: "14h00",
+        logo: Aephanemer_Logo,
+        photo: Aephanemer_Photo,
+        followed: false
+    },
+    {
+        name: "Amon Amarth",
+        day: "Day 2",
+        stage: "Odin Stage",
+        hour: "23h00",
+        logo: Amon_Amarth_Logo,
+        photo: Amon_Amarth_Photo,
+        followed: false
+    },
+    {
+        name: "Amorphis",
+        day: "Day 2",
+        stage: "Loki Stage",
+        hour: "20h00",
+        logo: Amorphis_Logo,
+        photo: Amorphis_Photo,
+        followed: false
+    },
+    {
+        name: "Arkona",
+        day: "Day 3",
+        stage: "Odin Stage",
+        hour: "19h00",
+        logo: Arkona_Logo,
+        photo: Arkona_Photo,
+        followed: false
+    },
+    {
+        name: "Belakor",
+        day: "Day 2",
+        stage: "Odin Stage",
+        hour: "15h00",
+        logo: Belakor_Logo,
+        photo: Belakor_Photo,
+        followed: false
+    },
+    {
+        name: "Blind Guardian",
+        day: "Day 3",
+        stage: "Odin Stage",
+        hour: "21h00",
+        logo: Blind_Guardian_Logo,
+        photo: Blind_Guardian_Photo,
+        followed: false
+    },
+    {
+        name: "Borknagar",
+        day: "Day 1",
+        stage: "Odin Stage",
+        hour: "19h00",
+        logo: Borknagar_Logo,
+        photo: Borknagar_Photo,
+        followed: false
+    },
+    {
+        name: "Brymir",
+        day: "Day 2",
+        stage: "Odin Stage",
+        hour: "19h00",
+        logo: Brymir_Logo,
+        photo: Brymir_Photo,
+        followed: false
+    },
+    {
+        name: "Dark Funeral",
+        day: "Day 1",
+        stage: "Loki Stage",
+        hour: "20h00",
+        logo: Dark_Funeral_Logo,
+        photo: Dark_Funeral_Photo,
+        followed: false
+    },
+    {
+        name: "Der Weg Einer Freiheit",
+        day: "Day 2",
+        stage: "Loki Stage",
+        hour: "00h00",
+        logo: Der_Weg_Einer_Freiheit_Logo,
+        photo: Der_Weg_Einer_Freiheit_Photo,
+        followed: false
+    },
+    {
+        name: "Eluveitie",
+        day: "Day 2",
+        stage: "Thor Stage",
+        hour: "00h00",
+        logo: Eluveitie_Logo,
+        photo: Eluveitie_Photo,
+        followed: false
+    },
+    {
+        name: "Elvenking",
+        day: "Day 3",
+        stage: "Odin Stage",
+        hour: "17h00",
+        logo: Elvenking_Logo,
+        photo: Elvenking_Photo,
+        followed: false
+    },
+    {
+        name: "Emperor",
+        day: "Day 3",
+        stage: "Odin Stage",
+        hour: "01h00",
+        logo: Emperor_Logo,
+        photo: Emperor_Photo,
+        followed: false
+    },
+    {
+        name: "Ensiferum",
+        day: "Day 3",
+        stage: "Odin Stage",
+        hour: "23h00",
+        logo: Ensiferum_Logo,
+        photo: Ensiferum_Photo,
+        followed: false
+    },
+    {
+        name: "Enslaved",
+        day: "Day 2",
+        stage: "Odin Stage",
+        hour: "01h00",
+        logo: Enslaved_Logo,
+        photo: Enslaved_Photo,
+        followed: false
+    },
+    {
+        name: "Equilibrium",
+        day: "Day 2",
+        stage: "Odin Stage",
+        hour: "21h00",
+        logo: Equilibrium_Logo,
+        photo: Equilibrium_Photo,
+        followed: false
+    },
+    {
+        name: "Finntroll",
+        day: "Day 3",
+        stage: "Loki Stage",
+        hour: "20h00",
+        logo: Finntroll_Logo,
+        photo: Finntroll_Photo,
+        followed: false
+    },
+    {
+        name: "Finsterforst",
+        day: "Day 3",
+        stage: "Thor Stage",
+        hour: "22h00",
+        logo: Finsterforst_Logo,
+        photo: Finsterforst_Photo,
+        followed: false
+    },
+    {
+        name: "Ghost Brigade",
+        day: "Day 2",
+        stage: "Thor Stage",
+        hour: "20h00",
+        logo: Ghost_Brigade_Logo,
+        photo: Ghost_Brigade_Photo,
+        followed: false
+    },
+    {
+        name: "Heathen Foray",
+        day: "Day 2",
+        stage: "Odin Stage",
+        hour: "17h00",
+        logo: Heathen_Foray_Logo,
+        photo: Heathen_Foray_Photo,
+        followed: false
+    },
+    {
+        name: "Heidevolk",
+        day: "Day 3",
+        stage: "Odin Stage",
+        hour: "15h00",
+        logo: Heidevolk_Logo,
+        photo: Heidevolk_Photo,
+        followed: false
+    },
+    {
+        name: "In Flames",
+        day: "Day 1",
+        stage: "Odin Stage",
+        hour: "23h00",
+        logo: In_Flames_Logo,
+        photo: In_Flames_Photo,
+        followed: false
+    },
+    {
+        name: "In Mourning",
+        day: "Day 3",
+        stage: "Loki Stage",
+        hour: "22h00",
+        logo: In_Mourning_Logo,
+        photo: In_Mourning_Photo,
+        followed: false
+    },
+    {
+        name: "Insomnium",
+        day: "Day 1",
+        stage: "Odin Stage",
+        hour: "01h00",
+        logo: Insomnium_Logo,
+        photo: Insomnium_Photo,
+        followed: false
+    },
+    {
+        name: "Kalmah",
+        day: "Day 3",
+        stage: "Thor Stage",
+        hour: "18h00",
+        logo: Kalmah_Logo,
+        photo: Kalmah_Photo,
+        followed: false
+    },
+    {
+        name: "Kampfar",
+        day: "Day 1",
+        stage: "Loki Stage",
+        hour: "18h00",
+        logo: Kampfar_Logo,
+        photo: Kampfar_Photo,
+        followed: false
+    },
+    {
+        name: "Korpiklaani",
+        day: "Day 1",
+        stage: "Odin Stage",
+        hour: "21h00",
+        logo: Korpiklaani_Logo,
+        photo: Korpiklaani_Photo,
+        followed: false
+    },
+    {
+        name: "Malevolent Creation",
+        day: "Day 2",
+        stage: "Loki Stage",
+        hour: "18h00",
+        logo: Malevolent_Creation_Logo,
+        photo: Malevolent_Creation_Photo,
+        followed: false
+    },
+    {
+        name: "Manegarm",
+        day: "Day 2",
+        stage: "Thor Stage",
+        hour: "18h00",
+        logo: Manegarm_Logo,
+        photo: Manegarm_Photo,
+        followed: false
+    },
+    {
+        name: "Mayhem",
+        day: "Day 3",
+        stage: "Loki Stage",
+        hour: "00h00",
+        logo: Mayhem_Logo,
+        photo: Mayhem_Photo,
+        followed: false
+    },
+    {
+        name: "Moonsorrow",
+        day: "Day 3",
+        stage: "Thor Stage",
+        hour: "00h00",
+        logo: Moonsorrow_Logo,
+        photo: Moonsorrow_Photo,
+        followed: false
+    },
+    {
+        name: "Nargaroth",
+        day: "Day 3",
+        stage: "Loki Stage",
+        hour: "18h00",
+        logo: Nargaroth_Logo,
+        photo: Nargaroth_Photo,
+        followed: false
+    },
+    {
+        name: "Norther",
+        day: "Day 3",
+        stage: "Loki Stage",
+        hour: "14h00",
+        logo: Norther_Logo,
+        photo: Norther_Photo,
+        followed: false
+    },
+    {
+        name: "Northland",
+        day: "Day 3",
+        stage: "Thor Stage",
+        hour: "16h00",
+        logo: Northland_Logo,
+        photo: Northland_Photo,
+        followed: false
+    },
+    {
+        name: "Omnium Gatherum",
+        day: "Day 1",
+        stage: "Thor Stage",
+        hour: "20h00",
+        logo: Omnium_Gatherum_Logo,
+        photo: Omnium_Gatherum_Photo,
+        followed: false
+    },
+    {
+        name: "Opeth",
+        day: "Day 2",
+        stage: "Thor Stage",
+        hour: "22h00",
+        logo: Opeth_Logo,
+        photo: Opeth_Photo,
+        followed: false
+    },
+    {
+        name: "Orden Ogan",
+        day: "Day 3",
+        stage: "Thor Stage",
+        hour: "20h00",
+        logo: Orden_Ogan_Logo,
+        photo: Orden_Ogan_Photo,
+        followed: false
+    },
+    {
+        name: "Primordial",
+        day: "Day 1",
+        stage: "Thor Stage",
+        hour: "00h00",
+        logo: Primordial_Logo,
+        photo: Primordial_Photo,
+        followed: false
+    },
+    {
+        name: "Skalmold",
+        day: "Day 3",
+        stage: "Thor Stage",
+        hour: "14h00",
+        logo: Skalmold_Logo,
+        photo: Skalmold_Photo,
+        followed: false
+    },
+    {
+        name: "Suidakra",
+        day: "Day 1",
+        stage: "Thor Stage",
+        hour: "16h00",
+        logo: Suidakra_Logo,
+        photo: Suidakra_Photo,
+        followed: false
+    },
+    {
+        name: "Svartsot",
+        day: "Day 2",
+        stage: "Thor Stage",
+        hour: "14h00",
+        logo: Svartsot_Logo,
+        photo: Svartsot_Photo,
+        followed: false
+    },
+    {
+        name: "Swallow the Sun",
+        day: "Day 1",
+        stage: "Odin Stage",
+        hour: "17h00",
+        logo: Swallow_the_Sun_Logo,
+        photo: Swallow_the_Sun_Photo,
+        followed: false
+    },
+    {
+        name: "Taake",
+        day: "Day 2",
+        stage: "Loki Stage",
+        hour: "22h00",
+        logo: Taake_Logo,
+        photo: Taake_Photo,
+        followed: false
+    },
+    {
+        name: "Thrudvangar",
+        day: "Day 1",
+        stage: "Thor Stage",
+        hour: "14h00",
+        logo: Thrudvangar_Logo,
+        photo: Thrudvangar_Photo,
+        followed: false
+    },
+    {
+        name: "Thyrfing",
+        day: "Day 1",
+        stage: "Loki Stage",
+        hour: "16h00",
+        logo: Thyrfing_Logo,
+        photo: Thyrfing_Photo,
+        followed: false
+    },
+    {
+        name: "Turisas",
+        day: "Day 1",
+        stage: "Thor Stage",
+        hour: "18h00",
+        logo: Turisas_Logo,
+        photo: Turisas_Photo,
+        followed: false
+    },
+    {
+        name: "Tyr",
+        day: "Day 1",
+        stage: "Odin Stage",
+        hour: "15h00",
+        logo: Tyr_Logo,
+        photo: Tyr_Photo,
+        followed: false
+    },
+    {
+        name: "Vintersorg",
+        day: "Day 1",
+        stage: "Loki Stage",
+        hour: "14h00",
+        logo: Vintersorg_Logo,
+        photo: Vintersorg_Photo,
+        followed: false
+    },
+    {
+        name: "Vreid",
+        day: "Day 3",
+        stage: "Loki Stage",
+        hour: "16h00",
+        logo: Vreid_Logo,
+        photo: Vreid_Photo,
+        followed: false
+    },
+    {
+        name: "Watain",
+        day: "Day 1",
+        stage: "Loki Stage",
+        hour: "00h00",
+        logo: Watain_Logo,
+        photo: Watain_Photo,
+        followed: false
+    },
+    {
+        name: "Wintersun",
+        day: "Day 1",
+        stage: "Thor Stage",
+        hour: "22h00",
+        logo: Wintersun_Logo,
+        photo: Wintersun_Photo,
+        followed: false
+    },
+    {
+        name: "Wolfheart",
+        day: "Day 2",
+        stage: "Thor Stage",
+        hour: "16h00",
+        logo: Wolfheart_Logo,
+        photo: Wolfheart_Photo,
+        followed: false
+    }
+];

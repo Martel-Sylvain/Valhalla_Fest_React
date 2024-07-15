@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from '../assets/img/Textures/Texture_1.png/'
+import backgroundImage from '../assets/img/Textures/Texture_2.png/'
 import MainImage from '../Components/MainImage/MainImage';
 import Countdown from '../Components/Countdown/Countdown';
 import SeparationLine from '../Components/SeparationLine/SeparationLine';
