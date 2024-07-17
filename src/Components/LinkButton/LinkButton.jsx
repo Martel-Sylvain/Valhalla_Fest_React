@@ -8,7 +8,7 @@ const LinkButton = ({ to, children }) => {
 
         <NavLink
             to={to}
-            className="inline-block px-6 py-2 bg-transparent border border-whiteV rounded-md text-[2vw] font-fontTitle text-whiteV hover:text-yellowV transform hover:rotate-[-2deg] hover:scale-125 transition duration-300 mt-[3vh] lg:mt-[7vh]"
+            className="inline-block px-[5vw] py-[2vw] xl:px-[60px] xl:py-[30px] bg-transparent border border-whiteV rounded-md text-xs md:text-[2vw] font-fontTitle text-whiteV hover:text-yellowV transform hover:rotate-[-2deg] hover:scale-125 transition duration-300 mt-[3vh] lg:mt-[7vh]"
         >
             {children}
         </NavLink >

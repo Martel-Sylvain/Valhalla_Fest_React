@@ -1,38 +1,34 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'
-import homeLogo from '../../assets/img/Festival_Logos/Home_Logo.png'
-import homeLogoActive from '../../assets/img/Festival_Logos/Home_Logo_Active.png'
-import hamburger from '../../assets/img/Icones/Hamburger.svg'
-import hamburgerHovered from '../../assets/img/Icones/HamburgerY.svg'
-import cross from '../../assets/img/Icones/Cross.svg'
-import crossHovered from '../../assets/img/Icones/CrossY.svg'
-
-
-
+import { NavLink } from 'react-router-dom';
+import homeLogo from '../../assets/img/Festival_Logos/Home_Logo.png';
+import homeLogoActive from '../../assets/img/Festival_Logos/Home_Logo_Active.png';
+import hamburger from '../../assets/img/Icones/Hamburger.svg';
+import hamburgerHovered from '../../assets/img/Icones/HamburgerY.svg';
+import cross from '../../assets/img/Icones/Cross.svg';
+import crossHovered from '../../assets/img/Icones/CrossY.svg';
 
 const Navbar = () => {
-    // useState
     const [showMenu, setShowMenu] = useState(false);
     const [isHoveredHome, setIsHoveredHome] = useState(false);
     const [isHoveredHamburger, setIsHoveredHamburger] = useState(false);
 
-    // Active Menu
-    const getActiveLinkColor = (isActive) => `${isActive ? "text-yellowV" : "text-whiteV"} text-xl font-fontTitle drop-shadow-custom hover:text-yellowV transform hover:rotate-[-2deg] hover:scale-125 transition duration-300 py-2 sm:py-0`;
-    // Active/Hovered Logo Home 
-    const getActiveLogo = (isActive, isHoveredHome) => isActive || isHoveredHome ? homeLogoActive : homeLogo;
-    // Hovered Hamburger
-    const getHamburgerIcon = (isHoveredHamburger) =>
-        isHoveredHamburger ? hamburgerHovered : hamburger;
-    // Hovered Cross
-    const getCrossIcon = (isHoveredHamburger) =>
-        isHoveredHamburger ? crossHovered : cross;
+    const getActiveLinkColor = (isActive) => `${isActive ? "text-yellowV" : "text-whiteV"} text-base lg:text-xl xl:text-2xl font-fontTitle drop-shadow-custom hover:text-yellowV transform hover:rotate-[-2deg] hover:scale-125 transition duration-300 py-2 md:py-0`;
+    const getActiveLogo = (isActive, isHoveredHome) => (isActive || isHoveredHome) ? homeLogoActive : homeLogo;
+    const getHamburgerIcon = (isHoveredHamburger) => isHoveredHamburger ? hamburgerHovered : hamburger;
+    const getCrossIcon = (isHoveredHamburger) => isHoveredHamburger ? crossHovered : cross;
 
     return (
         <nav className='fixed top-0 w-full flex justify-between items-center bg-goldVt z-50 border-b-2 border-whiteVt'>
-            <div className={`${showMenu ? "flex" : "hidden"} flex-col items-center w-full absolute top-full bg-goldVt pb-5 sm:flex sm:relative sm:flex-row sm:pb-0 sm:justify-around`}>
+            <div className={`${showMenu ? "flex" : "hidden"} flex-col items-center w-full absolute top-full bg-goldVt py-2 md:flex md:relative md:flex-row md:pb-2 md:justify-around`}>
                 <NavLink to="/" className="w-20">
                     {({ isActive }) => (
-                        <img className='w-20 transform hover:scale-125 transition duration-300' src={getActiveLogo(isActive, isHoveredHome)} alt="Home Logo" onMouseEnter={() => setIsHoveredHome(true)} onMouseLeave={() => setIsHoveredHome(false)} />
+                        <img
+                            className='w-20 transform hover:scale-125 transition duration-300'
+                            src={getActiveLogo(isActive, isHoveredHome)}
+                            alt="Home Logo"
+                            onMouseEnter={() => setIsHoveredHome(true)}
+                            onMouseLeave={() => setIsHoveredHome(false)}
+                        />
                     )}
                 </NavLink>
                 <NavLink to="/lineup" className={({ isActive }) => getActiveLinkColor(isActive)}>
@@ -51,13 +47,13 @@ const Navbar = () => {
                     Shop
                 </NavLink>
             </div>
-            <button onClick={() => setShowMenu(!showMenu)} className='ml-auto sm:hidden' onMouseEnter={() => setIsHoveredHamburger(true)}
+            <button onClick={() => setShowMenu(!showMenu)} className='ml-auto md:hidden' onMouseEnter={() => setIsHoveredHamburger(true)}
                 onMouseLeave={() => setIsHoveredHamburger(false)} >
-                <img className='w-12' src={showMenu ? getCrossIcon(isHoveredHamburger) : getHamburgerIcon(isHoveredHamburger)} alt={showMenu ? "Hide Menu" : "Show Menu"} />
+                <img className='w-10 sm:w-12 p-2' src={showMenu ? getCrossIcon(isHoveredHamburger) : getHamburgerIcon(isHoveredHamburger)} alt={showMenu ? "Hide Menu" : "Show Menu"} />
             </button>
-        </nav >
-
-    )
+        </nav>
+    );
 }
 
-export default Navbar
+export default Navbar;
+

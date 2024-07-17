@@ -27,9 +27,9 @@ const LateralMenu = () => {
     // href={icon.url} target="_blank" pour créer une nouvelle page en cas de click sur le lien
     // rel="noopener noreferrer" : bonne pratique pour des raisons de sécurité lorsque l'on utilise target="_blank" => on empêche en fait la nouvelle page d'avoir accès à window.opener et donc de savoir d'où m'on vient lorque l'on arrive sur celle-ci
     return (
-        <div className="fixed flex flex-col md:gap-2 lg:gap-6 right-1 bottom-1 bg-transparent z-20 mx-[1vh] my-[1vh] lg:my-[4vh]">
+        <div className="fixed flex flex-col right-1 bottom-20 bg-transparent z-20">
             {icons.map((icon, index) => (
-                <a key={index} href={icon.url} target="_blank" rel="noopener noreferrer" className="relative group w-[2vw] h-[2vh] lg:py-[1vh]">
+                <a key={index} href={icon.url} target="_blank" rel="noopener noreferrer" className="relative group w-[20px] h-[30px] mr-[0.25vh] sm:w-[25px] sm:h-[40px] md:w-[30px] md:h-[45px] md:mr-[0.5vh] lg:w-[35px] lg:h-[55px]  ">
                     <img className="absolute inset-0 transform group-hover:opacity-0 hover:rotate-[-6deg] hover:scale-150 transition duration-300"
                         src={icon.default} alt={icon.alt} />
                     <img className="absolute inset-0 transform opacity-0 group-hover:opacity-100 hover:rotate-[-6deg] hover:scale-150 transition duration-300"
